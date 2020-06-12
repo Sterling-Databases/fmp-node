@@ -1,0 +1,20 @@
+{
+  "restartable": "rs",
+  "legacyWatch": true,
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "events": {
+    "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"
+  },
+  "watch": [
+    "src/"
+  ],
+  "env": {
+    "DEBUG": true,
+    "BABEL_ENV": "debug"
+  },
+  "ext": "js json"
+}

@@ -7,6 +7,10 @@
     "dev": "nodemon -r esm --inspect src/index.js",
     "start": "node -r esm src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sterling-Databases/fmp-node.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

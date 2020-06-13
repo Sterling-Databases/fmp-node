@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/Sterling-Databases/fmp-node.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["FileMaker","dataApi","FMP", "node"],
+  "author": "John Morris <jmorris@sterlingdb.com> (https://sterlingdb.com)",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",

@@ -1,6 +1,6 @@
 {
   "name": "fmp-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "FileMaker Data API class for node.js",
   "main": "index.js",
   "scripts": {},
@@ -10,9 +10,12 @@
   },
   "keywords": [
     "FileMaker",
+    "File Maker",
     "dataApi",
+    "Data Api",
     "FMP",
-    "node"
+    "node",
+    "Claris"
   ],
   "author": "John Morris <jmorris@sterlingdb.com> (https://sterlingdb.com)",
   "license": "ISC",

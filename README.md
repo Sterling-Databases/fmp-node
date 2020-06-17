@@ -12,3 +12,26 @@ create a .env file with these paramaters:
     FMP_PASSWORD='myP@$$w0rd'
     FMP_HOST='https://domainname.com'
     FMP_DATABASE='MyFileMakerDatabaseName'
+
+
+   EXAMPLES:
+
+    const {FmpDataApi} = require('fmp-node');
+
+    const fmp =  new FmpDataApi();
+    
+    await fmp.login();
+
+    fmp.setLayout('contacts')
+
+    const data = {
+        fieldData:{
+            'firstName':'John',
+            'lastName':'Morris'
+        }
+    }
+
+    const resultAdd = await fmp.addRecord(data);
+
+    await fmp.logout();
+

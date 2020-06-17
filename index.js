@@ -32,9 +32,11 @@ class FmpDataApi{
 
     setLayout(name){
         this.layout = name;
+        return this;
     }
     setDatabase(name){
       this.database = name;
+      return this;
     }
     setThisError(error){
       this.error = true;

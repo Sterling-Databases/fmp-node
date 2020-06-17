@@ -53,8 +53,11 @@ Database Logout:
 Set/Change layout:
 
     fmp.setLayout('Layout Name');
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    
+    This can also be chained:
+    await fmp.setLayout('products').findAllRecords();
 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Get record by internal id:
 

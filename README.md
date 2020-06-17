@@ -25,14 +25,14 @@ Add record (full example):
 
     await fmp.login();
 
-    fmp.setLayout('contacts')
+    fmp.setLayout('contacts');
 
     const data = {
         fieldData:{
             'firstName':'John',
             'lastName':'Morris'
         }
-    }
+    };
 
     const resultAdd = await fmp.addRecord(data);
 
@@ -58,12 +58,13 @@ Set/Change layout:
 
 Get record by internal id:
 
-    await fmp.getRecord(fmpId)
+    const fmpId = '3';
+    await fmp.getRecord(fmpId);
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Find all records:
 
-    await fmp.findAllRecords()
+    await fmp.findAllRecords();
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Finds:
@@ -76,42 +77,50 @@ Finds:
 
 Duplicate record by internal id:
 
+    const fmpId = '3';
     await fmp.duplicateRecord(fmpId)
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Edit record by internal id:
 
+    const fmpId = '3';
     const recordData = {
         fieldData:{
             'firstName':'John',
             'lastName':'Morris'
         }
-    }
-    await fmp.editRecord(fmpId, recordData) 
+    };
+    await fmp.editRecord(fmpId, recordData);
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 Delete record by internal id:
-    await fmp.deleteRecord(fmpId)
+
+    await fmp.deleteRecord(fmpId);
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Get data api info:
-    await fmp.productInfo()
+
+    await fmp.productInfo();
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Get Database names:
-    await fmp.databaseNames() 
+
+    await fmp.databaseNames();
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Get layout names
-    await fmp.layoutNames()
+
+    await fmp.layoutNames();
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Get script names
-    await fmp.scriptNames()
+
+    await fmp.scriptNames();
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 Get layout details (ie: value lists)
-    await fmp.layoutDetails()
+
+    await fmp.layoutDetails();
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 

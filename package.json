@@ -8,13 +8,24 @@
     "type": "git",
     "url": "git+https://github.com/Sterling-Databases/fmp-node.git"
   },
-  "keywords": ["FileMaker","dataApi","FMP", "node"],
+  "keywords": [
+    "FileMaker",
+    "dataApi",
+    "FMP",
+    "node"
+  ],
   "author": "John Morris <jmorris@sterlingdb.com> (https://sterlingdb.com)",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "esm": "^3.2.25",
+    "esm": "^3.2.25"
+  },
+  "bugs": {
+    "url": "https://github.com/Sterling-Databases/fmp-node/issues"
+  },
+  "homepage": "https://github.com/Sterling-Databases/fmp-node#readme",
+  "devDependencies": {
     "nodemon": "^2.0.4"
   }
 }
